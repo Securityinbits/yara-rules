@@ -20,5 +20,5 @@ rule jar_in_msi
         $s_java_class = ".class"
 
     condition:
-        $msi_magic at 0 and filesize > 200KB and all of ($s_*) 
+        $msi_magic at 0 and filesize > 60KB and all of ($s_*) 
 }
